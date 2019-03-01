@@ -14,7 +14,7 @@ Settings file is automatically backed up when launching the game. Reset Game Set
 
 **NOTE:** You must choose to use FortniteClient-Win64-Shipping.exe for the executable. There are issues with BattleEye when running FortniteLauncher.exe
 
-This is Windows only and I do have a mac to address differences if any. If someone wants to update this with Mac support they are free to do as they please.
+This is Windows only and I do have a Mac to address differences. If someone wants to update this with Mac support they are free to do as they please.
 
 # TODO
 1. Update program to grab both the ~~config~~ and executable from registry or something
