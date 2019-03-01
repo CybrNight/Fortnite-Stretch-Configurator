@@ -17,7 +17,7 @@ Settings file is automatically backed up when launching the game. Reset Game Set
 This is Windows only and I do have a Mac to address differences. If someone wants to update this with Mac support they are free to do as they please.
 
 # TODO
-1. Update program to grab both the ~~config~~ and executable from registry or something
+1. Update program to use shortcut to remove need to locate game executable
 2. Clean UI
 3. Possibly build Windows executable wiith py2app or similar library
 4. Profit...
