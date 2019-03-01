@@ -22,4 +22,5 @@ This is Windows only and I do have a Mac to address differences. If someone want
 1. Update program to use shortcut to remove need to locate game executable
 2. Clean UI
 3. Possibly build Windows executable wiith py2app or similar library
-4. Profit...
+4. List of preset resolutions
+5. Profit...
