@@ -16,7 +16,7 @@ Settings file is automatically backed up when launching the game. Reset Game Set
 
 **NOTE:** You must choose to use FortniteClient-Win64-Shipping.exe for the executable. There are issues with BattleEye when running FortniteLauncher.exe. This will be addressed by switching to the Epic launcher's generated shortcut in a coming update
 
-This is Windows only and I do have a Mac to address differences. If someone wants to update this with Mac support they are free to do as they please.
+This is Windows only and I do NOT have a Mac to address differences. If someone wants to update this with Mac support they are free to do as they please.
 
 # TODO
 1. Update program to use shortcut to remove need to locate game executable
