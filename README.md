@@ -1,5 +1,5 @@
 # Fortnite Stretch Configurator
-This is a simple Python program that will set your Fortnite config located at C:\Users\\(user)\AppData\Local\FortniteGame\Saved\Config\WindowsClient\ to the resolution of your choosing, and handle launching the game.
+This is a tool designed to make runnning Fortnite in stretched resolution simple and easily reversible without dealing with manually editing ini files and the like.
 
 # **Usage**
 This uses a venv environment to eliminate the need to install Python on your machine.
