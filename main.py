@@ -133,13 +133,13 @@ class Main(tk.Frame):
             print(e)
 
     def select_game_dir(self):
-        file = tk.filedialog.askopenfilename(filetypes=[("Config files","*.ini")])
+        file = tk.filedialog.askopenfilename(filetypes=[("Fortnite Executable","FortniteClient-Win64-Shipping.exe")])
         self.game_path_entry.delete(0, tk.END)
         self.game_path_entry.insert(0, file)
         self.set_game_path(None)
 
     def select_config_dir(self):
-        directory = tk.filedialog.askdirectory()
+        directory = tk.filedialog.askopenfilename(filetypes=[("Fortnite Config","GameUserSettings.ini")])
         self.config_path_entry.delete(0,tk.END)
         self.config_path_entry.insert(0,directory)
         self.set_config_path(None)
