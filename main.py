@@ -11,7 +11,7 @@ class Main(tk.Frame):
         self.grid()
         self.init_window(title="Fortnite Stretch Config",geo="640x240")
 
-        self.config_path = "undefined"
+        self.config_path = "%LOCALAPPDATA%\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini"
         self.game_path = "undefined"
         self.resolution = "1440x1440"
 
@@ -22,16 +22,16 @@ class Main(tk.Frame):
             settingsfile = open("Config.ini", "w+")
             self.cfg.add_section("Filepaths")
             self.cfg.add_section("Settings")
-            self.cfg.set("Filepaths","ConfigFile", "")
             self.cfg.set("Filepaths","GameFile", "")
+            self.cfg.set("Filepaths","ConfigFile",self.config_path)
             self.cfg.set("Settings","Resolution", self.resolution)
             self.cfg.write(settingsfile, space_around_delimiters=False)
             settingsfile.close()
         else:
             self.cfg.read("Config.ini")
-            self.config_path = self.cfg["Filepaths"]["ConfigFile"]
             self.game_path = self.cfg["Filepaths"]["GameFile"]
             self.resolution = self.cfg["Settings"]["Resolution"]
+            self.config_path = self.cfg["Filepaths"]["ConfigFile"]
             self.config_path_entry.insert(0, self.config_path)
             self.game_path_entry.insert(0, self.game_path)
             self.resolution_entry.insert(0, self.resolution)
