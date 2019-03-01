@@ -7,9 +7,9 @@ You may still need to set your monitor resolution with NVIDIA Control Panel/AMD 
 - Download or clone the latest version of this repository and open run.bat
 - This uses a venv environment to eliminate the need to install Python and other dependencies on your machine.
 
-2. Locate the path to the game executable
-3. Locate the path to UserGameSettings.ini
-4. Enter resolution and press Launch & Apply
+1. Locate the path to the game executable
+2. Locate the path to GameUserSettings.ini (C:\Users\(user)\AppData\Local\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini)
+3. Enter resolution and press Launch & Apply
 
 **NOTE:** You must choose to use FortniteClient-Win64-Shipping.exe for the executable. There are issues with BattleEye when running FortniteLauncher.exe
 
