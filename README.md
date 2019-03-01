@@ -6,6 +6,7 @@ You may still need to set your monitor resolution with NVIDIA Control Panel/AMD 
 # **Usage**
 - Download or clone the latest version of this repository and open run.bat
 - This uses a venv environment to eliminate the need to install Python and other dependencies on your machine.
+- The default config path is loaded by default
 
 1. Locate the path to the game executable
 2. Enter resolution and press Launch & Apply
