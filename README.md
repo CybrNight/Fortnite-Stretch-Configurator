@@ -14,7 +14,7 @@ You may still need to set your monitor resolution with NVIDIA Control Panel/AMD 
 
 Settings file is automatically backed up when launching the game. Reset Game Settings button restores this backup to make reverting your resolution simple and hassle free.
 
-**NOTE:** You must choose to use FortniteClient-Win64-Shipping.exe for the executable. There are issues with BattleEye when running FortniteLauncher.exe
+**NOTE:** You must choose to use FortniteClient-Win64-Shipping.exe for the executable. There are issues with BattleEye when running FortniteLauncher.exe. This will be addressed by switching to the Epic launcher's generated shortcut in a coming update
 
 This is Windows only and I do have a Mac to address differences. If someone wants to update this with Mac support they are free to do as they please.
 
