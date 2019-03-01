@@ -12,4 +12,5 @@ This is Windows only and I do not have a Mac to fix and Mac related differences 
 # TODO
 1. Update program to grab both the config and executable from registry or something
 2. Clean UI
-3. Profit...
+3. Possibly build Windows executable wiith py2app or similar library
+4. Profit...
