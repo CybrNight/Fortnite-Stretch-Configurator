@@ -94,8 +94,15 @@ class Main(tk.Frame):
 
     def launch_game(self):
         if not os.path.exists(self.game_path) or not os.path.exists(self.config_path):
-            print("Error")
             return
+
+        self.cfg.read("Config.ini")
+        self.cfg["Settings"]["Resolution"] = self.resolution_entry.get()
+
+        with open("Config.ini", "w") as configfile:
+            self.cfg.write(configfile)
+            configfile.close()
+            self.cfg.clear()
 
         try:
             self.set_config_path(None)
@@ -109,7 +116,6 @@ class Main(tk.Frame):
 
         except Exception as e:
             print(e)
-            print("Error loading file")
             return
 
         try:
