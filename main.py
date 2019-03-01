@@ -11,8 +11,8 @@ class Main(tk.Frame):
         self.grid()
         self.init_window(title="Fortnite Stretch Config",geo="640x240")
 
-        self.config_path = "%LOCALAPPDATA%\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini"
-        self.game_path = "undefined"
+        self.config_path = os.path.expandvars("%LOCALAPPDATA%\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini")
+        self.game_path = "Fortnite.url"
         self.resolution = "1440x1440"
 
         self.cfg = configparser.ConfigParser()
@@ -22,7 +22,7 @@ class Main(tk.Frame):
             settingsfile = open("Config.ini", "w+")
             self.cfg.add_section("Filepaths")
             self.cfg.add_section("Settings")
-            self.cfg.set("Filepaths","GameFile", "")
+            self.cfg.set("Filepaths","GameFile", self.game_path)
             self.cfg.set("Filepaths","ConfigFile",self.config_path)
             self.cfg.set("Settings","Resolution", self.resolution)
             self.cfg.write(settingsfile, space_around_delimiters=False)
@@ -32,9 +32,10 @@ class Main(tk.Frame):
             self.game_path = self.cfg["Filepaths"]["GameFile"]
             self.resolution = self.cfg["Settings"]["Resolution"]
             self.config_path = self.cfg["Filepaths"]["ConfigFile"]
-            self.config_path_entry.insert(0, self.config_path)
-            self.game_path_entry.insert(0, self.game_path)
-            self.resolution_entry.insert(0, self.resolution)
+
+        self.config_path_entry.insert(0, self.config_path)
+        self.game_path_entry.insert(0, self.game_path)
+        self.resolution_entry.insert(0, self.resolution)
         self.cfg.clear()
 
     # Initialize Window
@@ -133,7 +134,7 @@ class Main(tk.Frame):
             with open(config, "w") as configfile:
                 self.cfg.write(configfile, space_around_delimiters=False)
                 configfile.close()
-            os.startfile(self.game_path)
+            os.system(self.game_path)
             self.cfg.clear()
         except Exception as e:
             print(e)
