@@ -1,2 +1,2 @@
 @echo off
-venv\scripts\pythonw.exe main.py
+venv\scripts\python.exe main.py
