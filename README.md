@@ -7,10 +7,7 @@ You may still need to set your monitor resolution with NVIDIA Control Panel/AMD 
 - Download or clone the latest version of this repository and open run.bat
 - This uses a venv environment to eliminate the need to install Python and other dependencies on your machine.
 - The default config path is loaded by default
-
-1. Locate the path to config file if necessary
-2. Locate game executable
-2. Enter resolution and press Launch & Apply
+- Included shortcut removes the need to locate the game executable
 
 Settings file is automatically backed up when launching the game. Reset Game Settings button restores this backup to make reverting your resolution simple and hassle free.
 
@@ -19,8 +16,6 @@ Settings file is automatically backed up when launching the game. Reset Game Set
 This is Windows only and I do NOT have a Mac to address differences. If someone wants to update this with Mac support they are free to do as they please.
 
 # TODO
-1. Update program to use shortcut to remove need to locate game executable
-2. Clean UI
-3. Possibly build Windows executable wiith py2app or similar library
-4. List of preset resolutions
-5. Profit...
+1. Clean UI
+2. List of preset resolutions
+3. Profit...
