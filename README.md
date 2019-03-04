@@ -1,5 +1,5 @@
 # Fortnite Stretch Configurator
-This is a tool designed to make runnning Fortnite in stretched resolution simple and easily reversible without dealing with manually editing ini files and the like.
+This is a tool designed to make running Fortnite in stretched resolution simple and easily reversible without dealing with manually editing ini files and the like.
 
 You may still need to set your monitor resolution with NVIDIA Control Panel/AMD for the mouse to work properly, but through making this tool I have discovered that the resolution used by 72hrs (1154 x 1080) and other proportional resolutions do not require the monitor resolution to be set as well. This may also apply to other resolutions.
 
